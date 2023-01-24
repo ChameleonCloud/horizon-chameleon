@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "horizon-chameleon"
+version = "0.1.0"
+description = "Customization and overrides for running OpenStack Horizon on Chameleon"
+authors = ["Chameleon <contact@chameleoncloud.org>"]
+license = "Apache 2.0"
+
+[tool.poetry.dependencies]
+python = "^3.8.10"
+
+[tool.poetry.dev-dependencies]
+# This dependency will not be loaded
+horizon = "19.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
